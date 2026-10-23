@@ -6,13 +6,13 @@
 /*   By: hsalahal <hsalahal@student.42abudhabi.ae> #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/15 08:07:49 by hsalahal         #+#    #+#              */
-/*   Updated: 2026/10/15 15:05:55 by hsalahal        ###   ########.fr        */
+/*   Updated: 2026/10/18 17:57:32 by hsalahal        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	forward(unsigned char *d, const unsigned char *sr, size_t n)
+static void	forward(unsigned char *d, const unsigned char *sr, size_t n)
 {
 	size_t	i;
 
@@ -24,7 +24,7 @@ void	forward(unsigned char *d, const unsigned char *sr, size_t n)
 	}
 }
 
-void	bakward(unsigned char *d, const unsigned char *sr, size_t n)
+static void	bakward(unsigned char *d, const unsigned char *sr, size_t n)
 {
 	size_t	i;
 

@@ -6,13 +6,13 @@
 /*   By: hsalahal <hsalahal@student.42abudhabi.ae> #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/17 14:50:46 by hsalahal         #+#    #+#              */
-/*   Updated: 2026/10/17 17:37:46 by hsalahal        ###   ########.fr        */
+/*   Updated: 2026/10/18 17:55:02 by hsalahal        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *dst, const char *src, size_t size)
+static char	*ft_strcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
