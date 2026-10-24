@@ -5,8 +5,8 @@
 /*                                                   +:+ +:+         +:+      */
 /*   By: hsalahal <hsalahal@student.42abudhabi.ae> #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/10/22 23:32:29 by hsalahal         #+#    #+#              */
-/*   Updated: 2026/10/23 00:30:49 by hsalahal        ###   ########.fr        */
+/*   Created: 2026/10/24 00:25:07 by hsalahal         #+#    #+#              */
+/*   Updated: 2026/10/24 11:45:39 by hsalahal        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ unsigned int	ft_lstsize(t_list *lst)
 	unsigned int	i;
 
 	i = 0;
-	if (!lst)
-		return (0);
 	while (lst)
 	{
 		lst = lst->next;
