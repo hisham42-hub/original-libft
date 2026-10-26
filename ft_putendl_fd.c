@@ -6,7 +6,7 @@
 /*   By: hsalahal <hsalahal@student.42abudhabi.ae> #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/21 16:36:09 by hsalahal         #+#    #+#              */
-/*   Updated: 2026/10/21 16:37:32 by hsalahal        ###   ########.fr        */
+/*   Updated: 2026/10/26 17:03:36 by hsalahal        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	unsigned int	i;
+	char			newline;
 
 	i = 0;
+	newline = '\n';
 	if (!s)
 		return ;
 	while (s[i])
@@ -24,5 +26,5 @@ void	ft_putendl_fd(char *s, int fd)
 		ft_putchar_fd(s[i], fd);
 		i++;
 	}
-	ft_putchar_fd('\n', 1);
+	ft_putchar_fd(newline, fd);
 }

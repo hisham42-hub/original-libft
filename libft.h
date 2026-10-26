@@ -6,7 +6,7 @@
 /*   By: hsalahal <hsalahal@student.42abudhabi.ae> #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/12 15:47:10 by hsalahal         #+#    #+#              */
-/*   Updated: 2026/10/24 18:25:01 by hsalahal        ###   ########.fr        */
+/*   Updated: 2026/10/26 23:22:00 by hsalahal        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
 
 typedef struct s_list
 {
@@ -45,7 +44,7 @@ void			*ft_memchr(const void *s, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 char			*ft_strnstr(const char *big, const char *little, size_t len);
 int				ft_atoi(const char *nptr);
-void			*ft_calloc(size_t count, size_t size);
+void			*ft_calloc(size_t nmemb, size_t size);
 char			*ft_strdup(const char *s);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
@@ -67,5 +66,5 @@ void			ft_lstdelone(t_list *lst, void (*del)(void *));
 void			ft_lstclear(t_list **lst, void (*del)(void *));
 void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst,
-					void *(*f)(void *), void (*del)(void *));
+					void	*(*f)(void *), void(*del)(void *));
 #endif

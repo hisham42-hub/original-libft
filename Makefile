@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: hsalahal <hsalahal@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/10/14 14:04:05 by hsalahal          #+#    #+#              #
-#    Updated: 2026/10/14 17:38:31 by hsalahal         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME= libft.a
 CC= gcc
 CFLAGS= -Wall -Wextra -Werror
@@ -26,5 +14,6 @@ $(NAME): $(OBJS)
 clean:
 	rm -f $(OBJS)
 fclean:
-	rm -f $(NAME) $(OBJS)
+	rm -f $(NAME)
 re: fclean all
+.PHONY: all clean fclean re

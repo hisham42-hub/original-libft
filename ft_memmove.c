@@ -49,9 +49,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		forward(d, sr, n);
 	}
-	if (d > sr)
-	{
+	else
 		bakward(d, sr, n);
-	}
 	return (dest);
 }
